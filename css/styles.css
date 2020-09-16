@@ -1,0 +1,800 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* End CSS Reset */
+
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 5em;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    padding: 1.6em 0;
+    text-transform: uppercase;
+    font-family: 'Chonburi', cursive;
+    font-size: 1.7em;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger .line{
+    width: 2.2em;
+    height: .13em;
+    background-color: #000607;
+    display: none;
+    margin: 8px auto;
+}
+  
+.hamburger:hover{
+    cursor: pointer;
+}
+
+header nav{
+    width: 60%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    line-height: 2em;
+}
+
+header nav li{
+    flex: 1;
+    font-size: 1.3em;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover,
+header nav a:active,
+header nav a:focus{
+    background-color: none;
+    text-decoration: underline;
+} 
+
+.banner{
+    position: relative;
+    width: 100%;
+}
+
+.banner-text{
+    position: absolute;
+    top:75%;
+    left: 27%;
+    font-size: 4em;
+    color: rgba(1, 14, 24, 0.892);
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.intro{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2em;
+}
+
+.intro-image img{
+    width: 420px;
+    height:610px;
+}
+
+.intro-text{
+    padding-left: 10px;
+}
+
+.intro-text article{
+    padding-left: 4em;
+}
+
+.intro-text h1{
+    font-size: 1.9em;
+    padding: 20px 0;
+}
+
+.intro-text p{
+    font-size: 2.2em;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.intro-pic picture{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.intro-pic img{
+    padding-top: 10px;
+    width: 228px;
+}
+
+.sec-intro{
+    margin-top: 4em;
+}
+
+.sec-intro h2{
+    font-size: 2.9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sec-intro a{
+    text-decoration: none;
+    color: black;
+}
+
+.sec-intro a:hover,
+.sec-intro a:focus,
+.sec-intro a:focus{
+    text-decoration: underline;
+}
+
+.new-pic{
+    margin-top: 1.3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-pic img{
+    transition: all .5s ease;
+}
+
+.new-pic img:hover{
+    transform: scale(1.2);
+}
+
+.new-pic div:nth-child(1){
+    transform: rotate(-10deg);
+}
+
+.new-pic div:nth-child(2){
+    transform: rotate(5deg);
+}
+
+.new-pic div:nth-child(3){
+    transform: rotate(-10deg);
+}
+
+.new-pic div:nth-child(4){
+    transform: rotate(15deg);
+}
+
+.brands{
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+
+.brand-intro{
+    font-size: 2.9em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.brand-intro a{
+    text-decoration: none;
+    color: black;
+}
+
+.brand-intro a:hover,
+.brand-intro a:focus,
+.brand-intro a:focus{
+    text-decoration: underline;
+}
+
+.brand-image{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.brand-image img{
+    height: 350px;
+}
+
+footer{
+    border-top: 1px solid rgb(218, 213, 213);
+    text-align: center;
+    padding-top: 2em;
+}
+
+.email p{
+    font-size: 1.1em;
+}
+.email form{
+    margin-top: 20px;
+}
+
+.email form input[type="email"]{
+    border: none;
+    font-size: .9em;
+    width: 22%;
+    border-bottom: 1px solid rgb(172, 161, 161);
+}
+
+.email form input[type="submit"]{
+    border: none;
+    background-color:white;
+}
+
+.location{
+    margin-top: 2em;
+}
+
+.links{
+    padding-top: 2em;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.links p{
+    padding: 0 30px;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+.links p a:hover,
+.links p a:active,
+.links p a:focus{
+    text-decoration: underline;
+}
+
+.media-logo{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-logo img{
+    width: 23px;
+    padding: 0 30px;
+}
+
+.media-logo a{
+    margin-left: 20px;
+}
+
+.copyright{
+    margin-bottom: 5px;
+}
+.copyright p{
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+/* new.html */
+
+.most-loved{
+    margin-top: 5em;
+}
+
+.most-title{
+    text-transform: uppercase;
+    font-size: 4em;
+}
+
+.most-title1{
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-top: 1.8em;
+}
+
+.most-img{
+    margin-top: 1.2em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.most-img img{
+    height: 350px;
+    margin-right: 10px;
+}
+
+.wear{
+    margin-top: 4em;
+}
+
+.wear-title{
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-top: 5em;
+}
+
+.wear-img{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.2em;
+}
+
+.wear-img img{
+    height: 360px;
+    margin-right: 10px;
+}
+
+.fabric{
+    margin-top: 9.5em;
+    margin-bottom: 4em;
+}
+
+.fabric-title{
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.fabric-img{
+    margin-top: 1.2em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fabric-img img{
+    height: 360px;
+    margin-right: 10px;
+}
+
+.exclusive{
+    margin-top: 5em;
+}
+
+.exclusive-intro{
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.exclusive-img{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.2em;
+}
+
+.exclusive-img img{
+    height: 310px;
+    margin-right: 10px;
+}
+
+.brands{
+    margin-top: 9.5em;
+    margin-bottom: 6em;
+}
+
+.brands-intro{
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.brands-img{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.2em;
+}
+
+.brands-img img{
+    height: 310px;
+    margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 940px){
+   
+    header nav{
+        display: none;
+    }
+
+    header .hamburger .line{
+        display: block;
+    }
+
+    .is-active header{
+        height: auto;
+    }
+
+    .is-active header nav{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .is-active header nav ul{
+        display: block;
+    }
+
+    .is-active header nav li{
+        display: block;
+        text-align: center;
+        width: 100%;
+        line-height: 2.6em;
+        font-size: 1.7em;
+    }
+    
+    .wrapper{
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .logo{
+        font-size: 1.5em;
+    }
+    
+    .banner-text{
+        font-size: 2.2em;
+        transform: translate(26%, 0);
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .intro .intro-image{
+        order: 2;
+        margin: 0 auto;
+    }
+
+    .intro .intro-image img{
+        margin-left: 9px;
+        width: 418px;
+        margin-top: 2em;
+    }
+
+    .intro-text article{
+        font-size: .8em;
+        padding-left: 30px;
+        margin-left: 3em;
+    }
+
+    .intro-pic img{
+        width: 175px;
+    }
+
+    .intro-pic picture{
+        justify-content: space-evenly;
+    }
+
+    .new-pic{
+        display:flex;
+        flex-direction: column;
+        margin-left: 10em;
+        padding-left: 5em;
+    }
+
+    .new-pic img{
+        width: 300px;
+    }
+
+    .brands{
+        margin-top: 0;
+        margin-top: 4em;
+        margin-bottom: 0;
+        margin-bottom: 2em;
+    }
+
+    .brand-image{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brand-image img{
+        height: 400px;
+        margin-bottom: 10px;
+        width: 350px;
+        margin-left: 15em;
+    }
+   
+    footer{
+        width: 360px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1em;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+
+    header nav{
+        display: none;
+    }
+
+    header .hamburger .line{
+        display: block;
+    }
+
+    .is-active header{
+        height: auto;
+    }
+
+    .is-active header nav{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .is-active header nav ul{
+        display: block;
+    }
+
+    .is-active header nav li{
+        display: block;
+        text-align: center;
+        width: 100%;
+        line-height: 2.6em;
+        font-size: 1.4em;
+    }
+
+    .wrapper{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .logo{
+        font-size: 1.2em;
+    }
+
+    .banner-text{
+        font-size: 1.9em;
+        transform: translate(25%, 0);
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .intro .intro-image img{
+        width: 350px;
+        margin-left: 9px;
+    }
+
+    .intro-text article{
+        font-size: .8em;
+        padding-left: 30px;
+    }
+
+    .intro-pic img{
+        width: 175px;
+    }
+
+    .intro .intro-image{
+        order: 2;
+    }
+
+    .new-pic{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .new-pic img{
+        width: 60%;
+    }
+
+    .brands{
+        margin-top: 0;
+        margin-top: 4em;
+        margin-bottom: 0;
+        margin-bottom: 2em;
+    
+    }
+
+    .brand-image{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brand-image img{
+        height: 400px;
+        margin: 0;
+        margin-bottom: 10px;
+        margin-left: 9em;
+    }
+   
+    footer{
+        width: 400px;
+        text-align: center;
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .intro-image img{
+        height: 470px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .is-active header nav li{
+        display: block;
+        text-align: center;
+        width: 100%;
+        line-height: 2.6em;
+        font-size: 1.2em;
+    }
+
+    .intro-text article{
+        margin-left: 0;
+    }
+
+    .intro-image img{
+        height: 480px;
+    }
+
+    .banner-text{
+        font-size: 1.9em;
+        transform: translate(-5%, 0);
+    }
+
+    .new-pic img{
+        width: 80%;
+    }
+
+    .new-pic{
+        margin-left: 0;
+    }
+
+    .brand-image img{
+        width: 80%;
+        margin-left: 0;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    
+
+    .brands-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brands-img img{
+        height: 400px;
+        margin-bottom: 10px;
+    }
+
+    .exclusive-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .exclusive-img img{
+        height: 400px;
+        margin-bottom: 10px;
+    }
+
+    .most-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .wear-img{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .wear-img img{
+    margin-bottom: 10px;
+   }
+
+   .fabric-img{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .fabric-img img{
+       margin-bottom: 10px;
+   }
+
+}
+
+@media only screen and (max-width: 400px){
+    .banner-text{
+        font-size: 1.2em;
+        transform: translate(1%, 0);
+    }
+
+    .intro-text article{
+       padding-left: 0;
+       margin-left: 0;
+    }
+
+    .intro-pic picture{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-pic picture img{
+        width: 100%;
+    }
+
+    .intro-image img{
+        height: 420px;
+    }
+
+    .brand-image img{
+        height: 300px;
+    }
+}
